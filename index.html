@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<!-- Title -->
   <title>Time and Stopwatch </title>
   
   <!-- HTML -->
@@ -17,7 +18,14 @@
 <body>
   
   <div class="bodys">
-  	<div class="timeOfPart"><div class="part1"><div class="myTime">
+  	<!-- middle contain box -->
+  	
+  	<div class="timeOfPart">
+  		
+  <!-- Time Section -->
+
+  		
+  		<div class="part1"><div class="myTime">
   		<div class="hour time">02</div>
   		<p>:</p>
   		<div class="minute time">48</div>
@@ -28,10 +36,40 @@
   	</div></div>
   	
   	
-  	<div class="part2">628272</div></div>
+  	
+  	  <!-- stopwatch Section -->
+
+  	<div class="part2">
+  		<div class="watch_box">
+  			
+  			<div class="watch_card">
+  			
+  			
+  			<div id="myhour" class="times">00</div>
+  			
+  			
+  			<p>:</p>
+  			
+  			
+  			<div id="myminute" class="times">00</div>
+  			
+  			
+  			<p>:</p>
+  			
+  			
+  			<div id="mysec" class="times">00</div>
+  			
+  			
+  		</div>
+  		<div class="watch_card2">
+  			<button class="btn" onclick="pauseWatch()"><p>Pause</p> </button>
+  			<button class="btn" onclick="startWatch()"><p>Start</p> </button>
+  			<button class="btn"><p>Stop</p> </button>
+  		</div>
+  		</div>
+  	</div></div>
   </div>
   
- ..
   
   <!-- Project -->
   <script src="main.js"></script>

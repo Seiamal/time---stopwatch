@@ -36,3 +36,60 @@ s =	(s < 10) ? '0' + s : s;
 timeZone();
 
 setInterval(timeZone,1000);
+
+
+
+/* WatchTime Section */
+
+let myhour = document.getElementById('myhour');
+let myminute = document.getElementById('myminute');
+let mysec = document.getElementById('mysec');
+
+let hr5 = 0;
+let min5 = 0;
+let sec5 = 0;
+
+let stopTime = true;
+
+
+function startWatch() {
+	if(stopTime == true){
+		stopTime = false;
+		timer() ;
+	}
+}
+
+
+function pauseWatch() {
+	if(stopTime ==false){
+		stopTime = true;
+	}
+}
+function timer() {
+	if(stopTime == false){
+		sec5++;
+		
+		if(sec5 == 60){
+			min++;
+			sec5 = 0;
+		}
+		
+		if(min5 == 60){
+			hr5++;
+			min5 = 0;
+		}
+		
+		
+		let s = (sec5 < 10)? '0' + sec5 : sec5;
+		let m = (min5 < 10)? '0' + min5 : min5;
+		let h = (hr5 < 10)? '0' + hr5 : hr5;
+
+		myhour.innerText = h;
+		myminute.innerText = m;
+		mysec.innerText = s;
+		
+		
+		setTimeout(timer,1000);
+	}
+	
+}
