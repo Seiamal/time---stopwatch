@@ -65,6 +65,22 @@ function pauseWatch() {
 		stopTime = true;
 	}
 }
+
+
+function restWatch() {
+	
+	myhour.innerText = '00';
+	myminute.innerText = '00';
+	mysec.innerText = '00';
+	
+	stopTime = true;
+	
+	hr5 = 0;
+	min5 = 0;
+	sec5 = 0;
+}
+
+
 function timer() {
 	if(stopTime == false){
 		sec5++;
