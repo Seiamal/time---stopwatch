@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.bodys{
+	background-image: url("./Images/BG_1.png");
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.timeOfPart{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1.7rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 70vh;
+}
+
+.part1{
+	
+	margin-left: 2rem;
+	backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border-radius: 20px;
+border: 1px solid rgb(0,0,0,0.1);
+box-shadow: 1px rgb(0,0,0,0.18);
+	padding: 3rem 4rem;
+}
+
+
+
+.part2{
+	margin-right: 2rem;
+	padding: 3rem 4rem;
+	
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+	border-radius: 20px;
+	border: 1px solid rgb(0, 0, 0, 0.1);
+	box-shadow: 1px rgb(0, 0, 0, 0.18);
+}
+
+.myTime{
+	display: flex;
+	gap:.5rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.time{
+	font-size: 50px;
+	background: #06B7FF;
+	padding: 0.5rem 0.6rem;
+	border-radius: 5px;
+	font-weight: 700;
+	color: #fff;
+}
+
+.myTime p{
+	font-size: 50px;
+	font-weight: 700;
+	
+}
+
+.session{
+	background: #D909AB;
+}
