@@ -125,6 +125,7 @@ d2 = d1 / 10;
 	
 	
 	
+	
 	var formattedNumber = ("0" + d3).slice(-2);
 	document.getElementById('mycenti').innerText = formattedNumber;
 	
