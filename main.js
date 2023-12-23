@@ -77,7 +77,7 @@ function autocall() {
 
 	}
 
-	setTimeout(autocall, 5);
+	setTimeout(autocall, 10);
 }
 
 function pauseWatch() {
@@ -107,7 +107,7 @@ function timer() {
 		sec5++;
 		
 		if(sec5 == 60){
-			min++;
+			min5++;
 			sec5 = 0;
 		}
 		
