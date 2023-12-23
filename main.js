@@ -61,7 +61,24 @@ function startWatch() {
 		autocall();
 	}
 }
+function autocall() {
 
+	if (!stopTime == true) {
+		let d = new Date();
+		let d1 = d.getMilliseconds();
+		d2 = d1 / 10;
+		d3 = Math.floor(d2);
+
+
+
+
+		var formattedNumber = ("0" + d3).slice(-2);
+		document.getElementById('mycenti').innerText = formattedNumber;
+
+	}
+
+	setTimeout(autocall, 5);
+}
 
 function pauseWatch() {
 	if(stopTime ==false){
@@ -115,21 +132,4 @@ function timer() {
 }
 
 
-function autocall() {
-	
-	if(stopTime == false){
-		let d = new Date();
-	let d1 = d.getMilliseconds();
-d2 = d1 / 10;
-	d3 = Math.floor(d2);
-	
-	
-	
-	
-	var formattedNumber = ("0" + d3).slice(-2);
-	document.getElementById('mycenti').innerText = formattedNumber;
-	
-	}
-	
-	setTimeout(autocall,5);
-}
+
